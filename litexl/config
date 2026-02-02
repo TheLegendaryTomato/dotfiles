@@ -93,18 +93,35 @@ plugins.terminal.size = 14
 -- 	[4] = 255
 -- }
 
--- "Real" terminal colors:
+-- gruvbox_dark terminal colors:
+
+-- plugins.terminal.background = {
+-- 	[1] = 40,
+-- 	[2] = 40,
+-- 	[3] = 40,
+-- 	[4] = 255
+-- }
+
+-- plugins.terminal.text = {
+-- 	[1] = 146,
+-- 	[2] = 131,
+-- 	[3] = 116,
+-- 	[4] = 255
+-- }
+
+-- liqube terminal colors:
+
 plugins.terminal.background = {
-	[1] = 40,
-	[2] = 40,
-	[3] = 40,
+	[1] = 19,
+	[2] = 23,
+	[3] = 30,
 	[4] = 255
 }
 
 plugins.terminal.text = {
-	[1] = 146,
-	[2] = 131,
-	[3] = 116,
+	[1] = 92,
+	[2] = 99,
+	[3] = 112,
 	[4] = 255
 }
 
