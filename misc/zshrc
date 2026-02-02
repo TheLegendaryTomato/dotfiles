@@ -86,3 +86,5 @@ alias discord='nohup dbus-run-session flatpak run com.discordapp.Discord & disow
 #alias steam='nohup dbus-run-session flatpak run com.valvesoftware.Steam & disown %1 && exit'
 alias steam='steam & disown %1 && exit'
 alias vinegar='nohup dbus-run-session flatpak run org.vinegarhq.Vinegar & disown %1 && exit'
+
+export PATH="$PATH:/home/djaysky/.local/bin"

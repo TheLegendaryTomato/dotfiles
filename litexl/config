@@ -6,7 +6,9 @@ local plugins = config.plugins
 
 ------------------------------ Themes ----------------------------------------
 
-core.reload_module("colors.gruvbox_dark")
+--core.reload_module("colors.gruvbox_dark")
+--core.reload_module("colors.everforest")
+core.reload_module("colors.liqube")
 
 --------------------------- Key bindings -------------------------------------
 
@@ -38,8 +40,8 @@ config.scroll_past_end = false
 	List of plugins:
 		- ide
 		- ide_c (if using C)
-		- wordcount(if not installed with ide)
-		- todotreeview (if not installed with ide)
+		- ide_lua (if using lua)
+		- wordcount (if not installed with ide)
 		- rainbowparen (if not installed with ide)
 		
 		- language_assembly_x86
@@ -54,6 +56,7 @@ config.scroll_past_end = false
 
 plugins.autocomplete.min_len = 1
 
+
 plugins.drawwhitespace.show_middle = false
 plugins.drawwhitespace.enabled = false
 
@@ -66,10 +69,8 @@ plugins.indentguide = false
 plugins.scm = false
 plugins.settings = false
 plugins.sticky_scroll = false
-
-plugins.todotreeview.ignore_paths = {
-	[1] = "lex.yy.c",
-}
+plugins.autosave = false
+plugins.todotreeview = false
 
 plugins.terminal.font = renderer.font.load(DATADIR .. "/fonts/JetBrainsMono-Regular.ttf", 14 * SCALE)
 plugins.terminal.bold_font = renderer.font.load(DATADIR .. "/fonts/JetBrainsMono-Regular.ttf", 14  * SCALE)
